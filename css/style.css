@@ -1,0 +1,15 @@
+html, body { height: 100%; }
+
+body { padding: 0; margin: 0; }
+
+nav { position: absolute; height: 100px; width: 100%; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; overflow: visible; }
+
+.logo { color: #f0dc05; }
+
+.nav-list { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; list-style: none; }
+
+.nav-list li a { text-decoration: none; }
+
+.main-image { display: -ms-flexbox; display: flex; height: 800px; }
+
+.main-image img { -o-object-fit: cover; object-fit: cover; }
