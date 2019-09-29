@@ -7,6 +7,13 @@ body{
   padding: 0;
   margin: 0;
 }
+.btn{
+  width: 250px;
+  height: 70px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 3%;
+}
 nav{
   position: absolute;
   height: 100px;
@@ -15,6 +22,7 @@ nav{
   align-items: center;
   justify-content: center;
   overflow: visible;
+  z-index: 2;
 }
 .logo{
   color: $color-brand;
@@ -29,10 +37,54 @@ nav{
     text-decoration: none;
   }
 }
+header{
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
 .main-image{
+  margin: 0 !important;
+  padding: 0 !important;
   display: flex;
+  top: 0;
   height: 700px;
+  z-index: -1;
   img{
     object-fit: cover;
+    overflow: visible;
   }
+}
+.welcome{
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  padding-top: 100px;
+  display: flex;
+  z-index: 4;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.welcome div{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span{
+    font-size: 80px;
+    color: $color-light;
+    padding-top: 20px;
+  }
+  :first-child{
+    font-size: 50px;
+  }
+}
+.btn-first{
+  background: $color-brand;
+  margin-top: 20px;
+  padding-top: 25px;
+  color: $color-light;
 }

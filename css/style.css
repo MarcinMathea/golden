@@ -2,14 +2,28 @@ html, body { height: 100%; }
 
 body { padding: 0; margin: 0; }
 
-nav { position: absolute; height: 100px; width: 100%; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; overflow: visible; }
+.btn { width: 250px; height: 70px; text-decoration: none; text-align: center; border-radius: 3%; }
+
+nav { position: absolute; height: 100px; width: 100%; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; overflow: visible; z-index: 2; }
 
 .logo { color: #f0dc05; }
 
 .nav-list { display: -ms-flexbox; display: flex; -ms-flex-direction: row; flex-direction: row; -ms-flex-pack: justify; justify-content: space-between; list-style: none; }
 
-.nav-list li a { text-decoration: none; }
+.nav-list li a { color: #fffff7; text-decoration: none; }
 
-.main-image { display: -ms-flexbox; display: flex; height: 800px; }
+header { -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; position: relative; }
 
-.main-image img { -o-object-fit: cover; object-fit: cover; }
+.main-image { margin: 0 !important; padding: 0 !important; display: -ms-flexbox; display: flex; top: 0; height: 700px; z-index: -1; }
+
+.main-image img { -o-object-fit: cover; object-fit: cover; overflow: visible; }
+
+.welcome { position: absolute; top: 0; margin: 0 auto; padding-top: 100px; display: -ms-flexbox; display: flex; z-index: 4; height: 100%; width: 100%; -ms-flex-direction: column; flex-direction: column; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; -ms-flex-line-pack: center; align-content: center; }
+
+.welcome div { -ms-flex-direction: column; flex-direction: column; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.welcome div span { font-size: 80px; color: #fffff7; padding-top: 20px; }
+
+.welcome div :first-child { font-size: 50px; }
+
+.btn-first { background: #f0dc05; margin-top: 20px; padding-top: 25px; color: #fffff7; }
