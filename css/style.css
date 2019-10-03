@@ -22,8 +22,22 @@ header { -ms-flex-align: center; align-items: center; -ms-flex-pack: center; jus
 
 .welcome div { -ms-flex-direction: column; flex-direction: column; display: -ms-flexbox; display: flex; -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.welcome div span { font-size: 80px; color: #fffff7; padding-top: 20px; }
+.welcome div h1 { font-size: 80px; color: #fffff7; }
 
-.welcome div :first-child { font-size: 50px; }
+.welcome div h2 { font-size: 50px; color: #fffff7; transform: translateY(70px); }
 
 .btn-first { background: #f0dc05; margin-top: 20px; padding-top: 25px; color: #fffff7; }
+
+.services { -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
+
+.services i { color: #f0dc05; border: 4px solid #f0dc05; border-radius: 501%; font-size: 40px; padding: 15px; }
+
+.services-title :first-child { font-size: 40px; }
+
+.services-title :last-child { font-size: 18px; transform: translateY(-150%); }
+
+.services-item { display: -ms-flexbox; display: flex; -ms-flex-direction: column; flex-direction: column; -ms-flex-line-pack: center; align-content: center; -ms-flex-align: center; align-items: center; -ms-flex-pack: justify; justify-content: space-between; padding-top: 80px; }
+
+.services-item h5 { font-size: 30px; }
+
+.services-item p { font-size: 18px; text-align: center; transform: translateY(-75%); }

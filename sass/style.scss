@@ -73,13 +73,14 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  span{
+  h1{
     font-size: 80px;
     color: $color-light;
-    padding-top: 20px;
   }
-  :first-child{
+  h2{
     font-size: 50px;
+    color: $color-light;
+    transform: translateY(70px);
   }
 }
 .btn-first{
@@ -87,4 +88,40 @@ header{
   margin-top: 20px;
   padding-top: 25px;
   color: $color-light;
+}
+.services{
+  justify-content: center;
+  align-items: center;
+  i{
+    color: $color-brand;
+    border: 4px solid $color-brand;
+    border-radius: 501%;
+    font-size: 40px;
+    padding: 15px;
+  }
+}
+.services-title{
+  :first-child{
+    font-size: 40px;
+  }
+  :last-child{
+    font-size: 18px;
+    transform: translateY(-150%);
+  }
+}
+.services-item{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 80px;
+  h5{
+    font-size: 30px;
+  }
+  p{
+    font-size: 18px;
+    text-align: center;
+    transform: translateY(-75%);
+  }
 }
