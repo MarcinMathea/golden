@@ -129,6 +129,7 @@ header{
 /*portfolio*/
 .portfolio{
   background: $color-darker-light;
+  padding: 80px 0 80px 0;
 }
 .portfolio .section-title{
   display: flex;
@@ -136,6 +137,7 @@ header{
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding-bottom: 50px;
 }
 .card-image{
   display: flex;
