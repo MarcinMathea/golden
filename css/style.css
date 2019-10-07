@@ -1,8 +1,12 @@
 html, body { height: 100%; }
 
-body { padding: 0; margin: 0; }
+body { padding: 0; margin: 0; font-family: 'Open Sans', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Expletus Sans', cursive; }
 
 .btn { width: 250px; height: 70px; text-decoration: none; text-align: center; border-radius: 3%; }
+
+i { display: inline-block; background: #000; font-size: 30px; width: 40px; height: 40px; border-radius: 50%; text-align: center; color: #fffff7; line-height: 40px; -ms-flex-align: center; align-items: center; vertical-align: middle; }
 
 nav { position: absolute; height: 100px; width: 100%; -ms-flex-direction: row; flex-direction: row; -ms-flex-align: center; align-items: center; -ms-flex-pack: center; justify-content: center; overflow: visible; z-index: 2; }
 
@@ -30,8 +34,6 @@ header { -ms-flex-align: center; align-items: center; -ms-flex-pack: center; jus
 
 .services { -ms-flex-pack: center; justify-content: center; -ms-flex-align: center; align-items: center; }
 
-.services i { color: #f0dc05; border: 4px solid #f0dc05; border-radius: 501%; font-size: 40px; padding: 15px; }
-
 .section-title :first-child { font-size: 40px; }
 
 .section-title :last-child { font-size: 18px; transform: translateY(-150%); }
@@ -41,6 +43,8 @@ header { -ms-flex-align: center; align-items: center; -ms-flex-pack: center; jus
 .services-item h5 { font-size: 30px; }
 
 .services-item p { font-size: 18px; text-align: center; transform: translateY(-75%); }
+
+.services-item i { color: #f0dc05; background: none; font-size: 50px; border: 3px solid #f0dc05; line-height: 90px; width: 90px; height: 90px; transform: translateY(30%); }
 
 /*portfolio*/
 .portfolio { background: #f2f2f2; padding: 80px 0 80px 0; }
@@ -58,3 +62,7 @@ header { -ms-flex-align: center; align-items: center; -ms-flex-pack: center; jus
 .card-body :first-child { font-size: 20px; }
 
 .card-body :last-child { font-style: 9px; transform: translateY(-150%); }
+
+footer { height: 100px; padding: 20px 0 20px 0; }
+
+footer i { color: #fffff7; background: #000; padding-top: 10px; font-size: 30px; line-height: 50px; width: 50px; height: 50px; margin: 10px; }

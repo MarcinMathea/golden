@@ -1,12 +1,17 @@
 $color-brand: #f0dc05;
 $color-light: #fffff7;
 $color-darker-light: #f2f2f2;
+$font-header: 'Expletus Sans', cursive;
 html,body{
   height: 100%;
 }
 body{
   padding: 0;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6,{
+    font-family: 'Expletus Sans', cursive;
 }
 .btn{
   width: 250px;
@@ -15,6 +20,20 @@ body{
   text-align: center;
   border-radius: 3%;
 }
+i{
+  display: inline-block;
+  background: #000;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  color: $color-light;
+  line-height: 40px;
+  align-items: center;
+  vertical-align: middle;
+}
+
 nav{
   position: absolute;
   height: 100px;
@@ -93,13 +112,6 @@ header{
 .services{
   justify-content: center;
   align-items: center;
-  i{
-    color: $color-brand;
-    border: 4px solid $color-brand;
-    border-radius: 501%;
-    font-size: 40px;
-    padding: 15px;
-  }
 }
 .section-title{
   :first-child{
@@ -125,6 +137,16 @@ header{
     text-align: center;
     transform: translateY(-75%);
   }
+    i{
+      color: $color-brand;
+      background: none;
+      font-size: 50px;
+      border: 3px solid $color-brand;
+      line-height: 90px;
+      width: 90px;
+      height: 90px;
+      transform: translateY(30%);
+    }
 }
 /*portfolio*/
 .portfolio{
@@ -170,4 +192,18 @@ header{
     font-style: 9px;
     transform: translateY(-150%);
   }
+}
+footer {
+  height: 100px;
+  padding: 20px 0 20px 0;
+}
+footer i{
+    color: $color-light;
+    background: #000;
+    padding-top: 10px;
+    font-size: 30px;
+    line-height: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
 }
