@@ -1,26 +1,31 @@
 $color-brand: #f0dc05;
 $color-light: #fffff7;
 $color-darker-light: #f2f2f2;
-$font-header: 'Expletus Sans', cursive;
-html,body{
+$font-header: "Expletus Sans", cursive;
+html,
+body {
   height: 100%;
 }
-body{
+body {
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
 }
-h1, h2, h3, h4, h5, h6,{
-    font-family: 'Expletus Sans', cursive;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Expletus Sans", cursive;
 }
-.btn{
+.btn {
   width: 250px;
   height: 70px;
   text-decoration: none;
   text-align: center;
   border-radius: 3%;
 }
-i{
+i {
   display: inline-block;
   background: #000;
   font-size: 30px;
@@ -34,7 +39,7 @@ i{
   vertical-align: middle;
 }
 
-nav{
+nav {
   position: absolute;
   height: 100px;
   width: 100%;
@@ -44,37 +49,41 @@ nav{
   overflow: visible;
   z-index: 2;
 }
-.logo{
+.logo {
+  position: relative;
+  display: flex;
   color: $color-brand;
+  font-size: 30px;
+  font-family: 'Great Vibes', cursive;
 }
-.nav-list{
+.nav-list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
-  li a{
+  li a {
     color: $color-light;
     text-decoration: none;
   }
 }
-header{
+header {
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.main-image{
+.main-image {
   margin: 0 !important;
   padding: 0 !important;
   display: flex;
   top: 0;
   height: 700px;
   z-index: -1;
-  img{
+  img {
     object-fit: cover;
     overflow: visible;
   }
 }
-.welcome{
+.welcome {
   position: absolute;
   top: 0;
   margin: 0 auto;
@@ -88,72 +97,72 @@ header{
   align-items: center;
   align-content: center;
 }
-.welcome div{
+.welcome div {
   flex-direction: column;
   display: flex;
   justify-content: center;
   align-items: center;
-  h1{
+  h1 {
     font-size: 80px;
     color: $color-light;
   }
-  h2{
+  h2 {
     font-size: 50px;
     color: $color-light;
     transform: translateY(70px);
   }
 }
-.btn-first{
+.btn-first {
   background: $color-brand;
   margin-top: 20px;
   padding-top: 25px;
   color: $color-light;
 }
-.services{
+.services {
   justify-content: center;
   align-items: center;
 }
-.section-title{
-  :first-child{
+.section-title {
+  :first-child {
     font-size: 40px;
   }
-  :last-child{
+  :last-child {
     font-size: 18px;
     transform: translateY(-150%);
   }
 }
-.services-item{
+.services-item {
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: space-between;
   padding-top: 80px;
-  h5{
+  h5 {
     font-size: 30px;
   }
-  p{
+  p {
     font-size: 18px;
     text-align: center;
     transform: translateY(-75%);
   }
-    i{
-      color: $color-brand;
-      background: none;
-      font-size: 50px;
-      border: 3px solid $color-brand;
-      line-height: 90px;
-      width: 90px;
-      height: 90px;
-      transform: translateY(30%);
-    }
+  i {
+    color: $color-brand;
+    background: none;
+    font-size: 50px;
+    border: 3px solid $color-brand;
+    line-height: 90px;
+    width: 90px;
+    height: 90px;
+    transform: translateY(30%);
+  }
 }
 /*portfolio*/
-.portfolio{
+.portfolio {
   background: $color-darker-light;
   padding: 80px 0 80px 0;
 }
-.portfolio .section-title{
+.portfolio .section-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -161,18 +170,18 @@ header{
   align-content: center;
   padding-bottom: 50px;
 }
-.card-image{
+.card-image {
   display: flex;
   position: relative;
   height: 400px;
   width: 320px;
-  img{
+  img {
     display: flex;
     position: relative;
     object-fit: cover;
   }
 }
-.card-body{
+.card-body {
   display: flex;
   object-fit: cover;
   width: 320px;
@@ -182,13 +191,13 @@ header{
   justify-content: center;
   align-items: center;
   background: $color-light;
-  *{
+  * {
     text-align: center;
   }
-  :first-child{
+  :first-child {
     font-size: 20px;
   }
-  :last-child{
+  :last-child {
     font-style: 9px;
     transform: translateY(-150%);
   }
@@ -197,13 +206,16 @@ footer {
   height: 100px;
   padding: 20px 0 20px 0;
 }
-footer i{
-    color: $color-light;
-    background: #000;
-    padding-top: 10px;
-    font-size: 30px;
-    line-height: 50px;
-    width: 50px;
-    height: 50px;
-    margin: 10px;
+footer i {
+  color: $color-light;
+  background: #000;
+  padding-top: 10px;
+  font-size: 30px;
+  line-height: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+footer .copyright {
+  padding-top: 20px;
 }
