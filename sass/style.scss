@@ -53,8 +53,14 @@ nav {
   position: relative;
   display: flex;
   color: $color-brand;
-  font-size: 30px;
+  font-size: 50px;
   font-family: 'Great Vibes', cursive;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 .nav-list {
   display: flex;
@@ -63,6 +69,7 @@ nav {
   list-style: none;
   li a {
     color: $color-light;
+    font-size: 18px;
     text-decoration: none;
   }
 }
@@ -78,6 +85,7 @@ header {
   top: 0;
   height: 700px;
   z-index: -1;
+  overflow: hidden;
   img {
     object-fit: cover;
     overflow: visible;
@@ -219,3 +227,20 @@ footer i {
 footer .copyright {
   padding-top: 20px;
 }
+
+@media (max-width: 920px) {
+    .logo {
+      font-size: 80px;
+    }
+    .nav-link {
+      font-size: 40px;
+      padding-top: 30px;
+    }
+    .welcome {
+      display: none;
+    }
+    .main-image {
+      height: 400px;
+      width: 100%;
+    }
+  }
